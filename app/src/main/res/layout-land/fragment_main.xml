@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tiagotoscano.freetec.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Digite Cpf"
+        android:ems="10"
+        android:id="@+id/cpfLogin"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CPF"
+        android:id="@+id/textView"
+        android:textColor="#090909"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Login"
+        android:onClick="clickLogin"
+        android:id="@+id/bntLogin"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/telefone"
+        android:layout_alignEnd="@+id/telefone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/bntLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0f0d0d" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nome"
+        android:ems="10"
+        android:id="@+id/txtNome"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:layout_alignRight="@+id/cpfLogin"
+        android:layout_alignEnd="@+id/cpfLogin"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telefone"
+        android:id="@+id/textView3"
+        android:textColor="#0f0d0d"
+        android:layout_below="@+id/cpfLogin"
+        android:layout_toRightOf="@+id/cpfLogin"
+        android:layout_toEndOf="@+id/cpfLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/telefone"
+        android:hint="(##) #####-####"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/txtNome"
+        android:layout_toEndOf="@+id/txtNome"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/telefone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0f0d0d" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Digite Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Cadastro"
+        android:id="@+id/bntCadastro"
+        android:layout_alignTop="@+id/txtEmail"
+        android:layout_toRightOf="@+id/txtEmail"
+        android:layout_toEndOf="@+id/txtEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver agenda sem login"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/bntAbrirCalendario"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+
+</RelativeLayout>

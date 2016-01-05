@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/touch_time"
+    android:layout_height="match_parent" android:id="@+id/itemTime">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/load"
+        android:id="@+id/imgCapa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:text="TEMA"
+        android:id="@+id/labTema"
+        android:layout_alignTop="@+id/imgCapa"
+        android:layout_toRightOf="@+id/imgCapa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/labHorariodesc"
+        android:layout_below="@+id/labTema"
+        android:layout_toRightOf="@+id/imgCapa"
+        android:layout_toEndOf="@+id/imgCapa"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
